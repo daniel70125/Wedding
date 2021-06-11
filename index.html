@@ -107,40 +107,117 @@
             <h1 id='RSVP-main'>R.S.V.P.</h1>
             <img src='./Images/divider.png' />
             <div id='rsvp-box-outter'>
+                <form name="contact" method="POST" data-netlify="true"></form>
                 <div id='rsvp-box-1'>
                     <h1> Will you be attending the wedding? </h1>
-
-                    <form name="contact" method="POST" data-netlify="true">
+                        <button name='Yes' >
+                            <i class="far fa-smile"></i>
+                            <span id='yes-attending'>YES</span>
+                        </button>
+                        <button name='No' >
+                            <i class="far fa-frown"></i>
+                            <span id='no-attending'>NO</span>
+                        </button>
                         <p>
-                          <label> <input placeholder="YOUR NAME*" type="text" name="name" /></label>   
+                          <label> <input required placeholder="YOUR NAME*" type="text" name="name" /></label>   
                         </p>
                         <p>
-                          <label> <input placeholder="YOUR EMAIL*" type="email" name="email" /></label>
+                          <label> <input required placeholder="YOUR EMAIL*" type="email" name="email" /></label>
                         </p>
-                            <button type="submit">Send</button>
-                      </form>
-
-
-
-
-
-
-                    <!-- <button>
-                        <i class="far fa-smile"></i>
-                        <span id='yes-attending'>YES</span>
-                    </button>
-                    <button>
-                        <i class="far fa-frown"></i>
-                        <span id='no-attending'>NO</span>
-                    </button> -->
                 </div>
-            </div>
+
+                <div id='rsvp-box-2'>
+                    <h1> Who else will be attending the wedding? </h1>
+                        <p>
+                          <label> <input required placeholder="GUEST NAME*" type="text" name="guestName" /></label>   
+                        </p>
+                </div>
+
+                <div id='rsvp-box-3'>
+                    <h1> Which meal would you prefer? </h1>
+                        <label> Choice 1:
+                            <p>
+                                <select id="meal-1">
+                                    <option selected value="Selected">Selected</option>
+                                    <option name="Ham" value="Ham">Ham</option>
+                                    <option name="Turkey" value="Turkey">Turkey</option>
+                                    <option name="Roast" value="Roast">Roast</option>
+                                    <option name="Red Beans & Rice" value="Red Beans & Rice">Red Beans & Rice</option>
+                                    <option name="Macoroni" value="Macoroni">Macoroni</option>
+                                    <option name="Dressing" value="Dressing">Dressing</option>
+                                    <option name="Seafood" value="Seafood">Seafood</option>
+                                    <option name="Pasta" value="Pasta">Pasta</option>
+                                    <option name="Jambalaya" value="Jambalaya">Jambalaya</option>
+                                    <option name="Veggie Mix" value="Veggie Mix">Veggie Mix</option>
+                                    <option name="Bar-B-Q Meatballs" value="Bar-B-Q Meatballs">Bar-B-Q Meatballs</option>
+                                    <option name="Sandwhiches" value="Sandwhiches">Sandwhiches</option>
+                                    <option name="Fruit Trays" value="Fruit Trays">Fruit Trays</option>
+                                    <option name="Eggs" value="Eggs">Eggs</option>
+                                    <option name="Fried Chicken" value="Fried Chicken">Fried Chicken</option>
+                                </select>
+                            </p>
+                        </label>
+                        <label> Choice 2:
+                            <p>
+                                <select id="meal-1">
+                                    <option selected value="Selected">Selected</option>
+                                    <option name="Ham" value="Ham">Ham</option>
+                                    <option name="Turkey" value="Turkey">Turkey</option>
+                                    <option name="Roast" value="Roast">Roast</option>
+                                    <option name="Red Beans & Rice" value="Red Beans & Rice">Red Beans & Rice</option>
+                                    <option name="Macoroni" value="Macoroni">Macoroni</option>
+                                    <option name="Dressing" value="Dressing">Dressing</option>
+                                    <option name="Seafood" value="Seafood">Seafood</option>
+                                    <option name="Pasta" value="Pasta">Pasta</option>
+                                    <option name="Jambalaya" value="Jambalaya">Jambalaya</option>
+                                    <option name="Veggie Mix" value="Veggie Mix">Veggie Mix</option>
+                                    <option name="Bar-B-Q Meatballs" value="Bar-B-Q Meatballs">Bar-B-Q Meatballs</option>
+                                    <option name="Sandwhiches" value="Sandwhiches">Sandwhiches</option>
+                                    <option name="Fruit Trays" value="Fruit Trays">Fruit Trays</option>
+                                    <option name="Eggs" value="Eggs">Eggs</option>
+                                    <option name="Fried Chicken" value="Fried Chicken">Fried Chicken</option>
+                                </select>
+                            </p>
+                        </label>
+                        <label> Choice 3:
+                            <p>
+                                <select id="meal-1">
+                                    <option selected value="Selected">Selected</option>
+                                    <option name="Ham" value="Ham">Ham</option>
+                                    <option name="Turkey" value="Turkey">Turkey</option>
+                                    <option name="Roast" value="Roast">Roast</option>
+                                    <option name="Red Beans & Rice" value="Red Beans & Rice">Red Beans & Rice</option>
+                                    <option name="Macoroni" value="Macoroni">Macoroni</option>
+                                    <option name="Dressing" value="Dressing">Dressing</option>
+                                    <option name="Seafood" value="Seafood">Seafood</option>
+                                    <option name="Pasta" value="Pasta">Pasta</option>
+                                    <option name="Jambalaya" value="Jambalaya">Jambalaya</option>
+                                    <option name="Veggie Mix" value="Veggie Mix">Veggie Mix</option>
+                                    <option name="Bar-B-Q Meatballs" value="Bar-B-Q Meatballs">Bar-B-Q Meatballs</option>
+                                    <option name="Sandwhiches" value="Sandwhiches">Sandwhiches</option>
+                                    <option name="Fruit Trays" value="Fruit Trays">Fruit Trays</option>
+                                    <option name="Eggs" value="Eggs">Eggs</option>
+                                    <option name="Fried Chicken" value="Fried Chicken">Fried Chicken</option>
+                                </select>
+                            </p>
+                        </label>
+                </div>
+
+                <div id='rsvp-box-4'>
+                    <h1> Music, Food Or Other Suggestions? </h1>
+                    <textarea placeholder='Leave A Note (Optional)'></textarea>
+                    <button type="submit"> Send </button>
+                </div>
+                </div>
+
+                </form>
         </div>
 
 
         <!-- Footer -->
         <footer>
-            <p></p>
+            <h1>Thank You !</h1>
+            <i onclick="topFunction()" id="myBtn" title="Go to top" class="fas fa-arrow-up"></i>
         </footer>
         <script src='./index.js'></script>
     </body>

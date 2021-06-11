@@ -109,14 +109,29 @@
             <div id='rsvp-box-outter'>
                 <div id='rsvp-box-1'>
                     <h1> Will you be attending the wedding? </h1>
-                    <button>
+
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                          <label> <input placeholder="YOUR NAME*" type="text" name="name" /></label>   
+                        </p>
+                        <p>
+                          <label> <input placeholder="YOUR EMAIL*" type="email" name="email" /></label>
+                        </p>
+                      </form>
+
+
+
+
+
+
+                    <!-- <button>
                         <i class="far fa-smile"></i>
                         <span id='yes-attending'>YES</span>
                     </button>
                     <button>
                         <i class="far fa-frown"></i>
                         <span id='no-attending'>NO</span>
-                    </button>
+                    </button> -->
                 </div>
             </div>
         </div>

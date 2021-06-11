@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* font-family: 'Great Vibes', cursive; */
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Dosis', sans-serif; */
+/* font-family: 'Dancing Script', cursive; */
 body {
     margin:0;
     padding:0;
@@ -244,12 +250,138 @@ section h4 {
 }
 
 #gift-registry-main {
-  height:80vh;
-  border:1px solid red;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
   text-decoration: underline;
+}
+.registry-1 {
+  height:20vh;
+  background-image: url('./Images/macys-logo.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.registry-2 {
+  height:20vh;
+  background-image: url('./Images/target-logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.registry-3 {
+  height:20vh;
+  background-image: url('./Images/BBBY.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.registry-4 {
+  height:20vh;
+  background-image: url('./Images/Amazon\ logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parallax {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/BoquetHD.jpg");
+
+  /* Set a specific height */
+  min-height: 90vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.parallax h1 {
+  color: white;
+  margin:0;
+  letter-spacing: 7px;
+  font-family: 'Great Vibes', cursive;
+}
+#countdown-main {
+  width:100%;
+  height:10vh;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top:55px;
+}
+#countdown-main div {
+  border-radius: 50%;
+  padding-top:15px;
+  width:80px;
+  color: white;
+  box-shadow: 0px 0px 2px 2px hotpink;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+#countdown-main p {
+  font-size:22px;
+  margin:1px;
+}
+#rsvp-main {
+height:100vh;
+background-color: #b4abb7;
+text-align: center;
+padding-top:150px;
+color:white;
+}
+#RSVP-main {
+  text-align: center;
+  margin-top:0px;
+  font-size: 54px;
+  font-family: 'Dancing Script', cursive;
+}
+#rsvp-main img {
+  width:70%;
+  position: relative;
+  bottom: 80px;
+}
+#rsvp-box-outter {
+  border:3px solid #fff;
+  width:95%;
+  margin: auto;
+  padding:5px;
+  position: relative;
+  bottom: 70px;
+}
+#rsvp-box-1 h1{
+  font-family: 'Dancing Script';
+    width: 70%;
+    margin: auto;
+    font-size: 56px;
+    font-weight: 100;
+    margin-bottom:35px;
+}
+#rsvp-box-1 h1::before {
+content: '↠';
+}
+#rsvp-box-1 h1::after {
+  content: '↞';
+}
+#rsvp-box-1 {
+  border:3px solid #fff;
+  padding:20px;
+}
+#yes-attending, #no-attending {
+  margin-left:10px;
+}
+#rsvp-box-1 button {
+  background:transparent;
+  border: 1px solid #fff;
+  padding:5px;
+  color:#fff;
+  font-size: 30px;
+  margin:5px 20px;
 }
 
 @-webkit-keyframes fade {
@@ -273,6 +405,15 @@ section h4 {
   @media only screen and (min-width: 768px) {
     #wedding-details {
       height:auto
+    }
+    #gift-registry-main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .registry-4, .registry-3, .registry-2, .registry-1 {
+      height:40vh;
+      width:50%;
+      background-size: 100%;
     }
   } 
   

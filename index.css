@@ -416,6 +416,7 @@ border:3px solid #d3ced5;
   color:#fff;
   font-size: 26px;
   margin:5px 20px;
+  transition: box-shadow 0.5s;
 }
 #rsvp-box-2 {
   border:3px solid #d3ced5;

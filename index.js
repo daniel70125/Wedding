@@ -112,3 +112,23 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Button click styling 
+
+const buttons = document.querySelectorAll('button');
+const attendingBtn = document.querySelector('#attendingWedding');
+console.log(attendingBtn);
+
+const yesBtn = buttons[0];
+const noBtn = buttons[1];
+console.log(yesBtn)
+yesBtn.addEventListener('click', (e) => {
+  noBtn.style.boxShadow = 'none';
+  yesBtn.style.boxShadow = '0px 0px 5px 5px hotpink';
+  attendingBtn.value = 'Yes'
+})
+noBtn.addEventListener('click', (e) => {
+  yesBtn.style.boxShadow = 'none';
+  noBtn.style.boxShadow = '0px 0px 5px 5px hotpink';
+  attendingBtn.value = 'No'
+})

@@ -409,9 +409,6 @@ border:3px solid #d3ced5;
 #yes-attending, #no-attending {
   margin-left:10px;
 }
-#attendingWedding {
-  display: none;
-}
 #rsvp-box-1 button {
   background:transparent;
   border: 1px solid #d3ced5;

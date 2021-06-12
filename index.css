@@ -344,7 +344,7 @@ color:white;
   font-family: 'Dancing Script', cursive;
 }
 #rsvp-main img {
-  width:70%;
+  width:20%;
   position: relative;
   bottom: 80px;
 }
@@ -421,85 +421,88 @@ border:3px solid #d3ced5;
 }
 #rsvp-box-2 h1 {
 font-family: 'Dancing Script';
-    width: 80%;
-    margin: auto;
-    font-size: 40px;
-    font-weight: 100;
-    margin-bottom: 35px;
+width: 80%;
+margin: auto;
+font-size: 40px;
+font-weight: 100;
+margin-bottom: 35px;
 }
 #rsvp-box-2 h1::before {
   content: '↠';
-  }
-  #rsvp-box-2 h1::after {
-    content: '↞';
-  }
-  #rsvp-box-3, #rsvp-box-4 {
-    border:3px solid #d3ced5;
+}
+#rsvp-box-2 h1::after {
+  content: '↞';
+}
+#rsvp-box-3, #rsvp-box-4 {
+  border:3px solid #d3ced5;
   padding: 20px;
+}
+#rsvp-box-3 h1 {
+  font-family: 'Dancing Script';
+  width: 90%;
+  margin: auto;
+  font-size: 36px;
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+#rsvp-box-3 h1::before {
+  content: '↠';
   }
-  #rsvp-box-3 h1 {
-    font-family: 'Dancing Script';
-        width: 90%;
-        margin: auto;
-        font-size: 36px;
-        font-weight: 100;
-        margin-bottom: 35px;
-    }
-    #rsvp-box-3 h1::before {
-      content: '↠';
-      }
-      #rsvp-box-3 h1::after {
-        content: '↞';
-      }
-      #rsvp-box-4 h1 {
-        font-family: 'Dancing Script';
-        width: 95%;
-        margin: auto;
-        font-size: 36px;
-        font-weight: 100;
-        margin-bottom: 35px;
-      }
-      #rsvp-box-4 h1::before {
-        content: '↠';
-        }
-        #rsvp-box-4 h1::after {
-          content: '↞';
-        }
-        #rsvp-box-4 button {
-          -webkit-text-size-adjust: 100%;
-          -webkit-tap-highlight-color: rgba(0,0,0,0);
-          box-sizing: border-box;
-          font: inherit;
-          overflow: visible;
-          -webkit-appearance: button;
-          font-weight: 400;
-          white-space: nowrap;
-          vertical-align: middle;
-          touch-action: manipulation;
-          cursor: pointer;
-          user-select: none;
-          border: 3px solid transparent;
-          font-family: 'Open Sans Condensed',sans-serif;
-          text-transform: uppercase;
-          border-radius: 4px;
-          transition: all .3s;
-          padding: 5px 16px;
-          margin: 0 34px;
-          position: relative;
-          text-align: center;
-          display: inline-block;
-          font-size: 28pt;
-          line-height: 28pt;
-          background: #ad9fb3;
-          border-color: #fff;
-          color: rgba(255,255,255,.65);
-        }
-        #rsvp-box-4 button::before {
-          content: '↠';
-          }
-          #rsvp-box-4 button::after {
-            content: '↞';
-          }
+#rsvp-box-3 h1::after {
+  content: '↞';
+}
+#rsvp-box-3 option {
+  background-color: tan;
+}
+#rsvp-box-4 h1 {
+  font-family: 'Dancing Script';
+  width: 95%;
+  margin: auto;
+  font-size: 36px;
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+#rsvp-box-4 h1::before {
+  content: '↠';
+  }
+#rsvp-box-4 h1::after {
+  content: '↞';
+}
+#rsvp-box-4 button {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  box-sizing: border-box;
+  font: inherit;
+  overflow: visible;
+  -webkit-appearance: button;
+  font-weight: 400;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  border: 3px solid transparent;
+  font-family: 'Open Sans Condensed',sans-serif;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all .3s;
+  padding: 5px 16px;
+  margin: 0 34px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  font-size: 28pt;
+  line-height: 28pt;
+  background: #ad9fb3;
+  border-color: #fff;
+  color: rgba(255,255,255,.65);
+}
+#rsvp-box-4 button::before {
+  content: '↠';
+}
+#rsvp-box-4 button::after {
+  content: '↞';
+}
 footer {
   height:60vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/wedding-footer.jpg");
@@ -534,6 +537,9 @@ footer h1 {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+#rsvp-box-3 label {
+  font-size:22px;
 }
 @-webkit-keyframes fade {
   from {opacity: .4}
@@ -572,6 +578,39 @@ footer h1 {
   @media only screen and (min-width: 992px) {
     #wedding-details img {
       width:75%;
+    }
+    #countdown-main div {
+      width:120px;
+      padding-top:22px;
+    }
+    #countdown-main p {
+      font-size:36px;
+    }
+    #rsvp-box-1 h1, #rsvp-box-2 h1, #rsvp-box-3 h1, #rsvp-box-4 h1 {
+      font-size:46px;
+    }
+    #rsvp-box-1 button {
+      font-size:26px;
+    }
+    #rsvp-box-1 {
+      height:70vh;
+    }
+    #rsvp-box-2 {
+      height: 40vh;
+    }
+    #rsvp-box-3 label {
+      font-size:22px;
+    }
+    #rsvp-box-4 {
+      height: 50vh;
+    }
+    #rsvp-box-4 button{
+      margin:20px;
+    }
+    #rsvp-box-1 input, #rsvp-box-2 input, #rsvp-box-3 select, #rsvp-box-4 textarea {
+      width:60%;
+      margin:auto;
+      padding:15px;
     }
   } 
   

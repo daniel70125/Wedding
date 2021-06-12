@@ -117,7 +117,18 @@ function topFunction() {
 
 const buttons = document.querySelectorAll('button');
 const attendingBtn = document.querySelector('#attendingWedding');
-console.log(attendingBtn);
+const navLinks = document.querySelectorAll('li');
+console.log(navLinks);
+
+navLinks[0].addEventListener('click', (e) => {
+  off()
+})
+navLinks[1].addEventListener('click', (e) => {
+  off()
+})
+navLinks[2].addEventListener('click', (e) => {
+  off()
+})
 
 const yesBtn = buttons[0];
 const noBtn = buttons[1];

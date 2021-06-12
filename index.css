@@ -144,6 +144,7 @@ section h4 {
   align-items: center;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  padding-top:5vh;
 }
 #wedding-details span {
   font-style: italic;
@@ -262,12 +263,15 @@ section h4 {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+#gift-registry-top  {
+padding-top:6vh;
+}
 #gift-registry-main {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
   text-decoration: underline;
+  padding-top:5vh;
 }
 .registry-1 {
   height:20vh;

@@ -18,18 +18,17 @@ header {
   height:5vh;
   position: sticky;
   top:0;
-  background: aliceblue;
+  background: pink;
   padding: 5px;
   z-index: 1;
 }
 header span {
-  font-size:30px;
+  font-size:26px;
   padding: 0px 10px;
-  color:#5e9a8e;
   font-family: 'Great Vibes', cursive;
 }
 header i.fa-heartbeat {
-  color:#5e9a8e;
+  color:deeppink;
   position: relative;
   bottom:0px;
   font-size:20px;
@@ -38,7 +37,6 @@ header i.fa-bars {
   position: absolute;
   right:10px;
   top:6px;
-  color:#5e9a8e;
   font-size:26px;
 }
 
@@ -123,6 +121,12 @@ section h4 {
   animation: spanClose 5s linear infinite;
   color:#5e9a8e;
 }
+#overlay li {
+  list-style-type: none;
+}
+#overlay a {
+  color:white;
+}
 #overlay h5 {
   font-family: 'Great Vibes', cursive;
   font-size:32px;
@@ -134,7 +138,6 @@ section h4 {
   color:#5e9a8e;
 }
 #wedding-details {
-  height:100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -452,7 +455,7 @@ margin-bottom: 35px;
   content: '↞';
 }
 #rsvp-box-3 option {
-  background-color: tan;
+  background-color: grey;
 }
 #rsvp-box-4 h1 {
   font-family: 'Dancing Script';

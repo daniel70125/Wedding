@@ -587,6 +587,9 @@ footer h1 {
       width:50%;
       background-size: 100%;
     }
+    .small-BG {
+      background-position: top;
+    }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
